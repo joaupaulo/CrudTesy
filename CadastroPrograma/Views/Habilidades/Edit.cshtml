@@ -1,0 +1,209 @@
+﻿@model CadastroPrograma.Models.Habilidades
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Habilidades</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="InfoProgramadorId" class="control-label"></label>
+                <select asp-for="InfoProgramadorId" class="form-control" asp-items="ViewBag.InfoProgramadorId"></select>
+                <span asp-validation-for="InfoProgramadorId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Ionic" class="control-label"></label>
+                <input asp-for="Ionic" class="form-control" />
+                <span asp-validation-for="Ionic" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ReactJS" class="control-label"></label>
+                <input asp-for="ReactJS" class="form-control" />
+                <span asp-validation-for="ReactJS" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ReactNative" class="control-label"></label>
+                <input asp-for="ReactNative" class="form-control" />
+                <span asp-validation-for="ReactNative" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Android" class="control-label"></label>
+                <input asp-for="Android" class="form-control" />
+                <span asp-validation-for="Android" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Flutter" class="control-label"></label>
+                <input asp-for="Flutter" class="form-control" />
+                <span asp-validation-for="Flutter" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Swift" class="control-label"></label>
+                <input asp-for="Swift" class="form-control" />
+                <span asp-validation-for="Swift" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Ios" class="control-label"></label>
+                <input asp-for="Ios" class="form-control" />
+                <span asp-validation-for="Ios" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Html" class="control-label"></label>
+                <input asp-for="Html" class="form-control" />
+                <span asp-validation-for="Html" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Css" class="control-label"></label>
+                <input asp-for="Css" class="form-control" />
+                <span asp-validation-for="Css" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Bootstrap" class="control-label"></label>
+                <input asp-for="Bootstrap" class="form-control" />
+                <span asp-validation-for="Bootstrap" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Jquery" class="control-label"></label>
+                <input asp-for="Jquery" class="form-control" />
+                <span asp-validation-for="Jquery" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AngularJs1" class="control-label"></label>
+                <input asp-for="AngularJs1" class="form-control" />
+                <span asp-validation-for="AngularJs1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Angular" class="control-label"></label>
+                <input asp-for="Angular" class="form-control" />
+                <span asp-validation-for="Angular" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Java" class="control-label"></label>
+                <input asp-for="Java" class="form-control" />
+                <span asp-validation-for="Java" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Python" class="control-label"></label>
+                <input asp-for="Python" class="form-control" />
+                <span asp-validation-for="Python" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AspMvc" class="control-label"></label>
+                <input asp-for="AspMvc" class="form-control" />
+                <span asp-validation-for="AspMvc" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AspWebForm" class="control-label"></label>
+                <input asp-for="AspWebForm" class="form-control" />
+                <span asp-validation-for="AspWebForm" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="C" class="control-label"></label>
+                <input asp-for="C" class="form-control" />
+                <span asp-validation-for="C" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Csharp" class="control-label"></label>
+                <input asp-for="Csharp" class="form-control" />
+                <span asp-validation-for="Csharp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NodeJS" class="control-label"></label>
+                <input asp-for="NodeJS" class="form-control" />
+                <span asp-validation-for="NodeJS" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ExpressNode" class="control-label"></label>
+                <input asp-for="ExpressNode" class="form-control" />
+                <span asp-validation-for="ExpressNode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cake" class="control-label"></label>
+                <input asp-for="Cake" class="form-control" />
+                <span asp-validation-for="Cake" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Djanto" class="control-label"></label>
+                <input asp-for="Djanto" class="form-control" />
+                <span asp-validation-for="Djanto" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Majento" class="control-label"></label>
+                <input asp-for="Majento" class="form-control" />
+                <span asp-validation-for="Majento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Php" class="control-label"></label>
+                <input asp-for="Php" class="form-control" />
+                <span asp-validation-for="Php" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Vue" class="control-label"></label>
+                <input asp-for="Vue" class="form-control" />
+                <span asp-validation-for="Vue" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Ruby" class="control-label"></label>
+                <input asp-for="Ruby" class="form-control" />
+                <span asp-validation-for="Ruby" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MySqlServer" class="control-label"></label>
+                <input asp-for="MySqlServer" class="form-control" />
+                <span asp-validation-for="MySqlServer" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MySql" class="control-label"></label>
+                <input asp-for="MySql" class="form-control" />
+                <span asp-validation-for="MySql" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Salesforce" class="control-label"></label>
+                <input asp-for="Salesforce" class="form-control" />
+                <span asp-validation-for="Salesforce" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Photoshop" class="control-label"></label>
+                <input asp-for="Photoshop" class="form-control" />
+                <span asp-validation-for="Photoshop" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Ilustrator" class="control-label"></label>
+                <input asp-for="Ilustrator" class="form-control" />
+                <span asp-validation-for="Ilustrator" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Seo" class="control-label"></label>
+                <input asp-for="Seo" class="form-control" />
+                <span asp-validation-for="Seo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Laravel" class="control-label"></label>
+                <input asp-for="Laravel" class="form-control" />
+                <span asp-validation-for="Laravel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Outros" class="control-label"></label>
+                <input asp-for="Outros" class="form-control" />
+                <span asp-validation-for="Outros" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

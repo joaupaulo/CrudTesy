@@ -1,0 +1,101 @@
+﻿@model IEnumerable<CadastroPrograma.Models.InfoProgramador>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumeroWhats)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Linkedin)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Local)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Estado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Portifolio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HorarioManha)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HorarioNoite)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HorarioMadrugada)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HorarioTarde)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HorarioComercial)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Salario)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumeroWhats)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Linkedin)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Local)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Estado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Portifolio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HorarioManha)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HorarioNoite)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HorarioMadrugada)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HorarioTarde)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HorarioComercial)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Salario)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

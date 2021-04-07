@@ -1,0 +1,245 @@
+﻿@model IEnumerable<CadastroPrograma.Models.Habilidades>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.InfoProgramador)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ionic)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ReactJS)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ReactNative)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Android)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Flutter)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Swift)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ios)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Html)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Css)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Bootstrap)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Jquery)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AngularJs1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Angular)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Java)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Python)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AspMvc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AspWebForm)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.C)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Csharp)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NodeJS)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ExpressNode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cake)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Djanto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Majento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Php)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Vue)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ruby)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MySqlServer)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MySql)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Salesforce)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Photoshop)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ilustrator)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Seo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Laravel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Outros)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.InfoProgramador.Estado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ionic)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReactJS)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReactNative)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Android)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Flutter)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Swift)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ios)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Html)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Css)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Bootstrap)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Jquery)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AngularJs1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Angular)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Java)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Python)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AspMvc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AspWebForm)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.C)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Csharp)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NodeJS)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ExpressNode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cake)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Djanto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Majento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Php)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Vue)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ruby)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MySqlServer)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MySql)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Salesforce)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Photoshop)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ilustrator)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Seo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Laravel)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Outros)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
